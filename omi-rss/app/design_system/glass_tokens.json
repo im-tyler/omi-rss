@@ -1,0 +1,197 @@
+{
+  "glass": {
+    "blur": {
+      "none": 0,
+      "sm": 4,
+      "base": 8,
+      "md": 12,
+      "lg": 20,
+      "xl": 25,
+      "2xl": 30,
+      "3xl": 40
+    },
+    "opacity": {
+      "transparent": 0,
+      "subtle": 0.05,
+      "light": 0.1,
+      "base": 0.15,
+      "medium": 0.2,
+      "strong": 0.3,
+      "solid": 0.4
+    },
+    "border": {
+      "width": {
+        "thin": 0.5,
+        "base": 1,
+        "medium": 1.5,
+        "thick": 2
+      },
+      "opacity": {
+        "subtle": 0.1,
+        "light": 0.15,
+        "base": 0.18,
+        "medium": 0.25,
+        "strong": 0.3
+      }
+    },
+    "shadow": {
+      "blur": {
+        "sm": 16,
+        "base": 24,
+        "md": 32,
+        "lg": 48,
+        "xl": 64
+      },
+      "offset": {
+        "sm": 4,
+        "base": 8,
+        "md": 16,
+        "lg": 24,
+        "xl": 32
+      },
+      "opacity": {
+        "subtle": 0.15,
+        "light": 0.25,
+        "base": 0.37,
+        "medium": 0.45,
+        "strong": 0.6
+      }
+    },
+    "gradients": {
+      "blue": {
+        "from": "rgba(20, 111, 177, 0.15)",
+        "to": "rgba(20, 111, 177, 0.05)"
+      },
+      "purple": {
+        "from": "rgba(89, 54, 181, 0.15)",
+        "to": "rgba(89, 54, 181, 0.05)"
+      },
+      "teal": {
+        "from": "rgba(14, 165, 233, 0.15)",
+        "to": "rgba(14, 165, 233, 0.05)"
+      },
+      "pink": {
+        "from": "rgba(236, 72, 153, 0.15)",
+        "to": "rgba(236, 72, 153, 0.05)"
+      },
+      "dark": {
+        "from": "rgba(0, 0, 0, 0.15)",
+        "to": "rgba(0, 0, 0, 0.05)"
+      },
+      "light": {
+        "from": "rgba(255, 255, 255, 0.15)",
+        "to": "rgba(255, 255, 255, 0.05)"
+      }
+    }
+  },
+  "colors": {
+    "background": {
+      "primary": "#0B1929",
+      "secondary": "#0F1E33",
+      "tertiary": "#152338",
+      "surface": "#1A2942"
+    },
+    "accent": {
+      "blue": {
+        "50": "#EFF6FF",
+        "100": "#DBEAFE",
+        "200": "#BFDBFE",
+        "300": "#93C5FD",
+        "400": "#60A5FA",
+        "500": "#3B82F6",
+        "600": "#2563EB",
+        "700": "#1D4ED8",
+        "800": "#1E40AF",
+        "900": "#1E3A8A"
+      },
+      "purple": {
+        "50": "#FAF5FF",
+        "100": "#F3E8FF",
+        "200": "#E9D5FF",
+        "300": "#D8B4FE",
+        "400": "#C084FC",
+        "500": "#A855F7",
+        "600": "#9333EA",
+        "700": "#7C3AED",
+        "800": "#6B21A8",
+        "900": "#581C87"
+      },
+      "teal": {
+        "50": "#F0FDFA",
+        "100": "#CCFBF1",
+        "200": "#99F6E4",
+        "300": "#5EEAD4",
+        "400": "#2DD4BF",
+        "500": "#14B8A6",
+        "600": "#0D9488",
+        "700": "#0F766E",
+        "800": "#115E59",
+        "900": "#134E4A"
+      },
+      "pink": {
+        "50": "#FDF2F8",
+        "100": "#FCE7F3",
+        "200": "#FBCFE8",
+        "300": "#F9A8D4",
+        "400": "#F472B6",
+        "500": "#EC4899",
+        "600": "#DB2777",
+        "700": "#BE185D",
+        "800": "#9D174D",
+        "900": "#831843"
+      }
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "rgba(255, 255, 255, 0.8)",
+      "tertiary": "rgba(255, 255, 255, 0.6)",
+      "disabled": "rgba(255, 255, 255, 0.4)"
+    }
+  },
+  "spacing": {
+    "xs": 4,
+    "sm": 8,
+    "md": 16,
+    "lg": 24,
+    "xl": 32,
+    "2xl": 48,
+    "3xl": 64
+  },
+  "radius": {
+    "none": 0,
+    "sm": 4,
+    "base": 8,
+    "md": 12,
+    "lg": 16,
+    "xl": 20,
+    "2xl": 24,
+    "full": 9999
+  },
+  "animation": {
+    "duration": {
+      "instant": 50,
+      "fast": 150,
+      "base": 300,
+      "slow": 500,
+      "slower": 800,
+      "slowest": 1200
+    },
+    "easing": {
+      "linear": "linear",
+      "ease": "ease",
+      "easeIn": "ease-in",
+      "easeOut": "ease-out",
+      "easeInOut": "ease-in-out",
+      "spring": "cubic-bezier(0.175, 0.885, 0.32, 1.275)",
+      "bounce": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+    }
+  },
+  "breakpoints": {
+    "mobile": 320,
+    "mobileLarge": 425,
+    "tablet": 768,
+    "desktop": 1024,
+    "desktopLarge": 1440,
+    "desktopXL": 1920
+  }
+}

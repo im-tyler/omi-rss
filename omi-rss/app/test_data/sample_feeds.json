@@ -1,0 +1,142 @@
+{
+  "feeds": [
+    {
+      "url": "https://www.theverge.com/rss/index.xml",
+      "title": "The Verge",
+      "description": "The Verge covers the intersection of technology, science, art, and culture.",
+      "type": "rss",
+      "category": "Technology",
+      "icon": "https://www.theverge.com/favicon.ico"
+    },
+    {
+      "url": "https://feeds.arstechnica.com/arstechnica/index",
+      "title": "Ars Technica",
+      "description": "Serving the Technologist for more than a decade. IT news, reviews, and analysis.",
+      "type": "rss",
+      "category": "Technology"
+    },
+    {
+      "url": "https://hnrss.org/frontpage",
+      "title": "Hacker News",
+      "description": "Links for the intellectually curious, ranked by readers.",
+      "type": "rss",
+      "category": "Technology"
+    },
+    {
+      "url": "https://www.reddit.com/r/programming/.rss",
+      "title": "r/programming",
+      "description": "Computer Programming subreddit",
+      "type": "rss",
+      "category": "Programming"
+    },
+    {
+      "url": "https://github.blog/feed/",
+      "title": "GitHub Blog",
+      "description": "Updates, ideas, and inspiration from GitHub",
+      "type": "rss",
+      "category": "Programming"
+    },
+    {
+      "url": "https://blog.flutter.dev/feed",
+      "title": "Flutter Blog",
+      "description": "Official Flutter blog with news and updates",
+      "type": "rss",
+      "category": "Programming"
+    },
+    {
+      "url": "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/section/world/rss.xml",
+      "title": "NYTimes World News",
+      "description": "World news from The New York Times",
+      "type": "rss",
+      "category": "News"
+    },
+    {
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "title": "BBC World News",
+      "description": "BBC World News RSS feed",
+      "type": "rss",
+      "category": "News"
+    },
+    {
+      "url": "https://www.theguardian.com/world/rss",
+      "title": "The Guardian World",
+      "description": "World news from The Guardian",
+      "type": "rss",
+      "category": "News"
+    },
+    {
+      "url": "https://rss.arxiv.org/rss/cs.AI",
+      "title": "arXiv AI",
+      "description": "Artificial Intelligence research papers",
+      "type": "rss",
+      "category": "Research"
+    },
+    {
+      "url": "https://www.nature.com/nature.rss",
+      "title": "Nature",
+      "description": "International weekly journal of science",
+      "type": "rss",
+      "category": "Science"
+    },
+    {
+      "url": "https://daringfireball.net/feeds/main",
+      "title": "Daring Fireball",
+      "description": "By John Gruber",
+      "type": "atom",
+      "category": "Technology"
+    },
+    {
+      "url": "https://xkcd.com/atom.xml",
+      "title": "xkcd",
+      "description": "A webcomic of romance, sarcasm, math, and language.",
+      "type": "atom",
+      "category": "Comics"
+    },
+    {
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCddiUEpeqJcYeBxX1IVBKvQ",
+      "title": "The Verge YouTube",
+      "description": "The Verge YouTube channel",
+      "type": "atom",
+      "category": "Video"
+    },
+    {
+      "url": "https://jsonfeed.org/feed.json",
+      "title": "JSON Feed",
+      "description": "JSON Feed project news",
+      "type": "json",
+      "category": "Technology"
+    }
+  ],
+  "categories": [
+    {
+      "id": "tech",
+      "name": "Technology",
+      "color": "#3B82F6",
+      "icon": "computer"
+    },
+    {
+      "id": "prog",
+      "name": "Programming",
+      "color": "#8B5CF6",
+      "icon": "code"
+    },
+    {
+      "id": "news",
+      "name": "News",
+      "color": "#EF4444",
+      "icon": "newspaper"
+    },
+    {
+      "id": "sci",
+      "name": "Science",
+      "color": "#10B981",
+      "icon": "flask"
+    },
+    {
+      "id": "research",
+      "name": "Research",
+      "color": "#F59E0B",
+      "icon": "academic-cap"
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+# Content Extraction Rules
+# Site-specific rules for better content extraction
+
+sites:
+  # News Sites
+  - domain: nytimes.com
+    name: The New York Times
+    selectors:
+      title: h1[data-testid="headline"]
+      author: span[itemprop="author"]
+      date: time[datetime]
+      content: section[name="articleBody"]
+      lead_image: figure img
+      remove:
+        - .ad
+        - .related-coverage
+        - .interactive-graphic
+    config:
+      multipage: true
+      next_page_selector: a[data-testid="next-page"]
+
+  - domain: washingtonpost.com
+    name: The Washington Post
+    selectors:
+      title: h1[data-testid="headline"]
+      author: .author-name
+      date: .display-date
+      content: .article-body
+      lead_image: .lead-art img
+      remove:
+        - .pb-f-ad
+        - .inline-video
+        - .interstitial-link
+
+  - domain: theguardian.com
+    name: The Guardian
+    selectors:
+      title: h1.content__headline
+      author: a[rel="author"]
+      date: time[datetime]
+      content: .content__article-body
+      lead_image: picture img
+      remove:
+        - .ad-slot
+        - .js-ad-slot
+        - .element-rich-link
+
+  - domain: bbc.com
+    name: BBC News
+    selectors:
+      title: h1#main-heading
+      author: .byline__name
+      date: time[datetime]
+      content: article[role="main"]
+      lead_image: .image-and-copyright-container img
+      remove:
+        - .bbccom_advert
+        - .inline-media
+        - .media-placeholder
+
+  # Tech Sites
+  - domain: arstechnica.com
+    name: Ars Technica
+    selectors:
+      title: h1[itemprop="headline"]
+      author: span[itemprop="author"]
+      date: time[datetime]
+      content: div[itemprop="articleBody"]
+      lead_image: figure.intro-image img
+      remove:
+        - .gallery
+        - .video
+
+  - domain: theverge.com
+    name: The Verge
+    selectors:
+      title: h1.c-page-title
+      author: .c-byline__author-name
+      date: time[datetime]
+      content: .c-entry-content
+      lead_image: .c-picture img
+      remove:
+        - .c-ad
+        - .c-related-list
+
+  - domain: techcrunch.com
+    name: TechCrunch
+    selectors:
+      title: h1.article__title
+      author: .article__byline a
+      date: time.article__published
+      content: .article-content
+      lead_image: .article__featured-image img
+      remove:
+        - .ad-unit
+        - .embed
+
+  - domain: wired.com
+    name: Wired
+    selectors:
+      title: h1[data-testid="ContentHeaderHed"]
+      author: a[href*="/contributor/"]
+      date: time[datetime]
+      content: .body__inner-container
+      lead_image: .responsive-asset img
+      remove:
+        - .ad
+        - .related-cne-video
+
+  # Magazine Sites
+  - domain: theatlantic.com
+    name: The Atlantic
+    selectors:
+      title: h1[itemprop="headline"]
+      author: address[itemprop="author"]
+      date: time[itemprop="datePublished"]
+      content: section[itemprop="articleBody"]
+      lead_image: figure.lead-img img
+      remove:
+        - .c-ad
+        - .c-recirculation
+
+  - domain: newyorker.com
+    name: The New Yorker
+    selectors:
+      title: h1[data-testid="ContentHeaderHed"]
+      author: a.byline__name-link
+      date: time[datetime]
+      content: .article__body
+      lead_image: .responsive-asset img
+      remove:
+        - .ad
+        - .cartoon
+
+  # Financial Sites
+  - domain: wsj.com
+    name: Wall Street Journal
+    selectors:
+      title: h1.wsj-article-headline
+      author: span.author-name
+      date: time.timestamp
+      content: .wsj-snippet-body
+      lead_image: .media-object img
+      remove:
+        - .wsj-ad
+        - .media-object-video
+
+  - domain: ft.com
+    name: Financial Times
+    selectors:
+      title: h1.o-topper__headline
+      author: a.o-author-opinion__author-link
+      date: time[datetime]
+      content: .o-topper__standfirst, .n-content-body
+      lead_image: .o-topper__visual img
+      remove:
+        - .o-ads
+        - .n-content-related-box
+
+  - domain: bloomberg.com
+    name: Bloomberg
+    selectors:
+      title: h1.lede-title
+      author: .author-name
+      date: time[datetime]
+      content: .body-content
+      lead_image: .lede-image img
+      remove:
+        - .ad-container
+        - .terminal
+
+  # Academic Sites
+  - domain: nature.com
+    name: Nature
+    selectors:
+      title: h1.c-article-title
+      author: .c-author-list
+      date: time[datetime]
+      content: .c-article-body
+      lead_image: .c-article-hero img
+      remove:
+        - .c-ad
+        - .recommended
+
+  - domain: science.org
+    name: Science
+    selectors:
+      title: h1.article__headline
+      author: .contributors
+      date: .article-header__publish-date
+      content: .article__body
+      lead_image: .article__hero img
+      remove:
+        - .ad-container
+        - .related-content
+
+  # Medium & Substack
+  - domain: medium.com
+    name: Medium
+    selectors:
+      title: h1
+      author: a[data-testid="authorName"]
+      date: span[data-testid="storyPublishDate"]
+      content: article section
+      lead_image: img[role="presentation"]
+      remove:
+        - .pw-highlight-menu
+        - div[data-testid="paywall"]
+
+  - domain: substack.com
+    name: Substack
+    selectors:
+      title: h1.post-title
+      author: .author-name
+      date: .post-date
+      content: .post-content
+      lead_image: .post-header img
+      remove:
+        - .subscription-widget
+        - .comments
+
+# Global extraction rules
+global:
+  # Elements to always remove
+  remove:
+    - script
+    - style
+    - noscript
+    - iframe[src*="doubleclick"]
+    - iframe[src*="googlesyndication"]
+    - .advertisement
+    - .ads
+    - #ad
+    - .social-share
+    - .newsletter-signup
+    - .popup
+    - .modal
+    - .overlay
+    - .gdpr
+    - .cookie-notice
+
+  # Attributes to clean
+  clean_attributes:
+    - onclick
+    - onload
+    - onmouseover
+    - style
+    - data-ad-*
+    - data-track-*
+
+  # Minimum content length
+  min_content_length: 200
+
+  # Maximum extraction time (ms)
+  max_extraction_time: 10000
+
+# Scoring weights for content detection
+scoring:
+  positive_class_names:
+    - article: 5
+    - content: 5
+    - entry: 5
+    - post: 5
+    - text: 5
+    - body: 5
+    - main: 5
+    - story: 5
+
+  negative_class_names:
+    - ad: -5
+    - ads: -5
+    - banner: -3
+    - comment: -3
+    - footer: -3
+    - header: -3
+    - menu: -3
+    - nav: -3
+    - related: -3
+    - sidebar: -3
+    - social: -3
+    - widget: -3
+
+  # Scoring based on element type
+  element_scores:
+    p: 1
+    pre: 3
+    td: 3
+    blockquote: 3
+    h2: 2
+    h3: 2
+    h4: 2
+    li: 0.5
+    div: 0
+    span: 0
