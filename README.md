@@ -1,15 +1,8 @@
-# Omi RSS Ecosystem
+# Omi RSS
 
-This repository is organized into two main sections:
-
-## 📂 [omi-rss](omi-rss/)
 The core project containing:
 - **Application** (Flutter)
 - **Browser Extension**
 - **Backend Server**
 
-## 🌐 [website](website/)
-The marketing website and landing page (React + Vite).
-
-## 🧹 [.claude/cleanup](.claude/cleanup/)
-Legacy files and backups from the project restructuring.
+See `omi-rss/` for the source. The marketing site lives in a separate repository.
