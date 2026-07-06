@@ -7,6 +7,8 @@ A cross-platform RSS reader — a Flutter client, a browser extension, and a sel
 ![Node](https://img.shields.io/badge/backend-Node.js-339933)
 ![Status](https://img.shields.io/badge/status-alpha-orange)
 
+**Website:** <https://omirss.com>
+
 ## What is this
 
 Omi RSS is an RSS reader built as three pieces that work together:
@@ -52,7 +54,7 @@ Load `omi-rss/extension/` as an unpacked extension:
 
 ## Status
 
-Alpha — under active development. The marketing site lives in a separate repository.
+Alpha — under active development. The marketing site is live at <https://omirss.com> (its source lives in a separate private repository).
 
 ## License
 
